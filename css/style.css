@@ -5,21 +5,17 @@
 :root {
     --primer-color: #8d5cff;
     --segundo-color: #ff4ec4;
-    --tercer_color: #80dd4a;
+    --tercer-color: #80dd4a;
     --boton-color: #9f9fff;
     --subtitulos: #2f2f2f;
     --background-seccion: #e2dce5;
 }
 
-/*Ajustes generales*/
-html {
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-}
-
 body {
-    background-color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
 }
 
 a {
@@ -38,9 +34,6 @@ header nav{
 .hero h1{
     padding: 2rem;
 }
-
-
-
 
 
 /* Estilos para el video en el encabezado */
@@ -109,8 +102,6 @@ header nav{
     transform: translate(-50%, -50%);
     z-index: 1;
     color: white;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.37);
-    /* Cambia el color del texto si es necesario */
 }
 
 .content-video p {
@@ -132,20 +123,9 @@ header nav{
 }
 
 main p{
-    font-size: 11px;
+    font-size: 0.9rem;
 }
 
-
-/* Estilos para el texto que se superpondrá sobre el video */
-.container-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    color: white;
-    /* Cambia el color del texto si es necesario */
-}
 
 .navbar{
     padding-left: 4rem;
@@ -210,8 +190,6 @@ main p{
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
     top: 0;
 }
-
-
 
 
 
@@ -283,12 +261,12 @@ button a {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 4rem;
+    padding: 7rem;
 }
 
 .parrafo-sobremi p {
     text-align: justify;
-    padding: 5rem;
+    padding: 6rem;
     margin: 0;
 }
 
@@ -302,31 +280,120 @@ button a {
 }
 
 
-/*SECCIÓN MIS CONOCIMIENTOSÍ*/
+/*SECCIÓN MIS CONOCIMIENTOS*/
 .mis-conocimientos {
     background-color: rgb(139, 105, 251);
     color: white;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 4rem;
+    padding: 7rem;
 }
 
-.mis-conocimientos h1{
+.mis-conocimientos h1 {
     color: white;
 }
 
 .parrafo-conocimientos p {
     text-align: justify;
-    padding: 5rem;
+    padding: 6rem;
     margin: 0;
+}
+
+/* skills de conocimientos */
+.skills:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.detalles{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.menu-skills{
+    position: relative;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.menu-skills div {
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background-color: white;
+    transition: width 2s ease;
+}
+
+/* Animación de skills conocimientos */
+#html-menu {
+    animation: html-barra 2s forwards;
+}
+
+@keyframes html-barra {
+    100% {
+        width: 80%;
+    }
+}
+
+#css-menu {
+    animation: css-barra 2s forwards;
+}
+
+@keyframes css-barra {
+    100% {
+        width: 70%;
+    }
+}
+
+#javascript-menu {
+    animation: javascript-barra 2s forwards;
+}
+
+@keyframes javascript-barra {
+    100% {
+        width: 75%;
+
+    }
+}
+
+#photoshop-menu {
+    animation: photoshop-barra 2s forwards;
+}
+
+@keyframes photoshop-barra {
+    100% {
+        width: 85%;
+    }
+}
+
+#illustrator-menu {
+    animation: illustrator-barra 2s forwards;
+}
+
+@keyframes illustrator-barra {
+    100% {
+        width: 70%;
+    }
+}
+
+#after-effects-menu {
+    animation: after-effects-barra 2s forwards;
+}
+
+@keyframes after-effects-barra {
+    100% {
+        width: 80%;
+    }
 }
 
 
 /*GALERÍA DE DESARROLLO WEB*/
 .galeria-desarrollo-web {
-    padding: 5rem 0;
+    padding: 7rem 0;
     text-align: center;
     background-color: var(--background-seccion);
     height: auto;
@@ -336,7 +403,7 @@ button a {
 /* GALERÍA DE ANUNCIOS */
 /* Estilos para el carrusel de la galería */
 .galeria-anuncios {
-    padding: 5rem 0;
+    padding: 7rem 0;
     text-align: center;
     background-color:white;
     height: auto;
@@ -367,9 +434,6 @@ button a {
     padding: 0;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
 }
-
-
-
 
 
 /* Estilos para el formulario de contacto */
@@ -433,10 +497,6 @@ button a {
 }
 
 
-
-
-
-
 /* Estilos para el pie de página */
 footer h4 {
     margin-bottom: 1rem;
@@ -468,7 +528,11 @@ footer ul li a:hover {
 }
 
 
-/*------------------------------------ RESPONSIVE ------------------------------------------------------------------------------*/
+
+
+
+
+/*------------------------- RESPONSIVE -----------------------------------*/
 
 /* Estilos para pantallas más pequeñas (celular pequeño) */
 @media (max-width: 320px) {
@@ -507,7 +571,7 @@ footer ul li a:hover {
 
     .sobremi,
     .mis-conocimientos {
-        padding: 2rem;
+        padding: 2.5rem;
     }
 
     .parrafo-sobremi p,

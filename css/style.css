@@ -60,7 +60,7 @@ header nav{
 /* Estilos para las redes sociales en el video */
 
 .redes-sociales{
-    margin-top: 10rem;
+    margin-top: 8rem;
     margin-bottom: 1rem;
     display: flex;
     justify-content: flex-start;
@@ -92,7 +92,7 @@ header nav{
 /* Estilos para el texto que se superpondrá sobre el video */
 .container-video {
     position: absolute;
-    top: 60%;
+    top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;

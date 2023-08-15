@@ -28,7 +28,7 @@ p{
 
 /*!--------HEADER-------- */
 header nav{
-    background-color: rgb(195, 130, 255);
+    background-color:rgb(127, 96, 227);
 }
 
 .hero h1{
@@ -132,10 +132,26 @@ main p{
     padding-right: 4rem;
 }
 
+.navbar-nav{
+    background-color:#9d76ff;
+    border-radius: 0.5rem;
+}
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    background-color: #d08dff;
+    border: 1px solid white;
+    border-radius: 100%;
+    transition: box-shadow .15s ease-in-out;
+}
+
 .nav-link{
     color: white;
-    margin: 1rem;
-    font-weight: 400;
+    margin: 0.4rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .nav-link:hover{
@@ -164,7 +180,7 @@ main p{
 
 /* Estilos para el menú de hamburguesa */
 .navbar-toggler-icon {
-    background-color: rgb(148, 68, 188);
+    background-color: rgb(255, 255, 255);
     width: 30px;
     height: 3px;
     transition: transform 0.3s ease, background-color 0.3s ease;
@@ -241,7 +257,7 @@ section h3 {
 
 /*BOTONES*/
 button {
-    background-color: var(--primer-color);
+    background-color: rgb(144, 117, 232);
     border-radius: 2rem;
     padding: 1rem;
     border: 0;
@@ -268,6 +284,7 @@ button a {
     text-align: justify;
     padding: 6rem;
     margin: 0;
+    color: black;
 }
 
 .boton button img {
@@ -282,28 +299,44 @@ button a {
 
 /*SECCIÓN MIS CONOCIMIENTOS*/
 .mis-conocimientos {
-    background-color: rgb(139, 105, 251);
+    background-color: rgb(141, 115, 228);
     color: white;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 7rem;
+    padding: 0 8rem;
 }
 
 .mis-conocimientos h1 {
     color: white;
 }
 
+.porcentaje {
+    color: #663dae;
+}
+
 .parrafo-conocimientos p {
     text-align: justify;
-    padding: 6rem;
+    padding: 5rem 2.5rem;
     margin: 0;
 }
 
 /* skills de conocimientos */
+.grafico-conocimientos{
+    padding: 3rem 2.5rem;
+    margin: 1rem;
+    font-weight: 800;
+}
+
+.icono-grafico{
+    width: 40px;
+    height: 40px;
+    display: flex;
+}
+
 .skills:not(:last-child) {
-    margin-bottom: 2rem;
+    margin-bottom: 3.3rem;
 }
 
 .detalles{
@@ -311,11 +344,17 @@ button a {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    align-items: center;
+    align-content: center;
+}
+
+.skills .detalles{
+    margin: 1.5rem;
 }
 
 .menu-skills{
     position: relative;
-    border: 1px solid white;
+    border: 1px solid rgba(225, 210, 252, 0.601);
     border-radius: 20px;
 }
 
@@ -324,8 +363,8 @@ button a {
     width: 0;
     height: 8px;
     border-radius: 10px;
-    background-color: white;
-    transition: width 2s ease;
+    background-color: rgb(252, 143, 225);
+    transition: width 15s ease;
 }
 
 /* Animación de skills conocimientos */
@@ -393,9 +432,9 @@ button a {
 
 /*GALERÍA DE DESARROLLO WEB*/
 .galeria-desarrollo-web {
-    padding: 7rem 0;
+    padding: 5rem 0;
     text-align: center;
-    background-color: var(--background-seccion);
+    background-color: rgb(255, 255, 255);
     height: auto;
 }
 
@@ -403,9 +442,9 @@ button a {
 /* GALERÍA DE ANUNCIOS */
 /* Estilos para el carrusel de la galería */
 .galeria-anuncios {
-    padding: 7rem 0;
+    padding: 5rem 0;
     text-align: center;
-    background-color:white;
+    background-color: #f6f6f6;
     height: auto;
 }
 
@@ -416,9 +455,7 @@ button a {
     left: 0;
     width: 100%;
     height: 12rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.628));
     padding: 10px;
-    color: white;
 }
 
 .carousel-caption h5,
@@ -442,7 +479,7 @@ button a {
     justify-content: center;
     align-items: center;
     padding: 5rem 0;
-    background-color: var(--background-seccion);
+    background-color:rgb(255, 155, 220);
     height: auto;
 }
 
@@ -483,7 +520,7 @@ button a {
 }
 
 .form-derecha input[type="submit"] {
-    background-color: var(--primer-color);
+    background-color: rgb(141, 115, 228);
     color: white;
     border: none;
     border-radius: 5px;
@@ -502,14 +539,19 @@ footer h4 {
     margin-bottom: 1rem;
 }
 
-footer ul li {
-    margin-bottom: 0.5rem;
-}
-
-footer ul li a {
+footer a, p{
+    font-size: 1rem;
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
+}
+
+footer ul li img{
+    margin: 10px;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
 }
 
 footer ul li a:hover {
@@ -537,12 +579,31 @@ footer ul li a:hover {
 /* Estilos para pantallas más pequeñas (celular pequeño) */
 @media (max-width: 320px) {
     body {
-        font-size: 12px;
-    }
+            font-size: 1rem;
+            /* Aumentar el tamaño de fuente */
+        }
 
     .navbar {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        margin: ;
+    }
+
+    .navbar-toggler-icon {
+        width: 40px; /* Aumentar el tamaño del ícono de hamburguesa */
+        height: 4px;
+    }
+
+    .redes-sociales {
+        margin-top: 1rem;
+    }
+
+    .navbar-nav .dropdown-menu {
+        font-size: 1.2rem; /* Aumentar el tamaño de fuente en el menú desplegable */
     }
 
     .navbar .navbar-nav .nav-item.dropdown .dropdown-menu {
@@ -569,6 +630,15 @@ footer ul li a:hover {
         justify-content: center;
     }
 
+    .content-video p{
+        font-size: 1rem;
+    }
+
+    section h3{
+        font-size: 1.1rem;
+        padding: 0.5rem 1rem;
+    }
+
     .sobremi,
     .mis-conocimientos {
         padding: 2.5rem;
@@ -576,9 +646,14 @@ footer ul li a:hover {
 
     .parrafo-sobremi p,
     .parrafo-conocimientos p {
-        padding: 1rem;
+        padding: 2rem  1rem;
         margin: 0;
         overflow: hidden;
+        font-size: 1.1rem;
+    }
+
+    .grafico-conocimientos{
+        padding: 1rem;
     }
 
     .galeria-desarrollo-web,
@@ -591,6 +666,11 @@ footer ul li a:hover {
     section {
         padding: 3rem;
         height: auto;
+    }
+
+    .form-derecha h3{
+        font-size: 1.1rem;
+        text-align: center;
     }
 }
 
@@ -632,11 +712,34 @@ footer ul li a:hover {
         padding: 2.5rem;
     }
 
+    .mis-conocimientos {
+        background-color: rgb(141, 115, 228);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .grafico-conocimientos{
+        padding: 1rem;
+    }
+
+    .detalles img, span{
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .skills:not(:last-child){
+        margin-bottom: 2.9rem;
+    }
+
     .parrafo-sobremi p,
     .parrafo-conocimientos p {
-        padding: 1.5rem;
+        padding: 1rem;
         margin: 0;
         overflow: hidden;
+        font-size: 1rem;
     }
 
     .galeria-desarrollo-web,
@@ -644,14 +747,23 @@ footer ul li a:hover {
     .formulario {
         padding: 2.5rem 0;
     }
+
+    .form-derecha{
+        padding: 2.9rem;
+    }
+
+    .form-derecha h3{
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
 }
 
 
 
 /* Estilos para pantallas grandes (celular grande) */
-@media (min-width: 376px) and (max-width: 720px) {
+@media (min-width: 376px) and (max-width: 1000px) {
     body {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .navbar {
@@ -668,17 +780,50 @@ footer ul li a:hover {
         padding: 3rem;
     }
 
+    .mis-conocimientos {
+        background-color: rgb(141, 115, 228);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .grafico-conocimientos {
+        padding: 2rem 0;
+    }
+
+    .detalles img, span{
+        margin: 5px;
+        font-size: 1rem;
+    }
+
     .parrafo-sobremi p,
     .parrafo-conocimientos p {
         padding: 2rem;
         margin: 0;
         overflow: hidden;
+        font-size: 1.1rem;
     }
 
     .galeria-desarrollo-web,
     .galeria-anuncios,
     .formulario {
         padding: 3rem 0;
+    }
+
+    footer a, p{
+        font-size: 1rem;
+    }
+
+    footer h4{
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #ffcbee;
+    }
+
+    .div-row{
+        margin: 0;
     }
 }
 
@@ -688,37 +833,6 @@ footer ul li a:hover {
 
 ----------------------/* Estilos para tablets */-------------------------
 
-@media (min-width: 768px) and (max-width: 1199px) {
-    body {
-        font-size: 16px;
-        /* Ajustar el tamaño de fuente para tablets */
-    }
-
-    .navbar {
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
-
-    .hero h1 {
-        padding: 4rem;
-    }
-
-    .sobremi,
-    .mis-conocimientos {
-        padding: 5rem;
-    }
-
-    .parrafo-sobremi p,
-    .parrafo-conocimientos p {
-        padding: 5rem;
-    }
-
-    .galeria-desarrollo-web,
-    .galeria-anuncios,
-    .formulario {
-        padding: 5rem 0;
-    }
-}
 
 
 ---------------/* Estilos para pantallas más grandes (escritorio) */----------
@@ -748,6 +862,7 @@ footer ul li a:hover {
         padding: 6rem;
     }
 
+
     .galeria-desarrollo-web,
     .galeria-anuncios,
     .formulario {
@@ -756,6 +871,16 @@ footer ul li a:hover {
 
     footer {
         padding: 5rem;
+    }
+
+    footer a, p{
+        font-size: 1rem;
+    }
+
+    footer h4{
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #ffcbee;
     }
 
     .footer-col {

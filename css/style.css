@@ -58,25 +58,20 @@ header nav{
 }
 
 /* Estilos para las redes sociales en el video */
-.redes-sociales {
-    position: absolute;
-    bottom: 3rem;
-    /* Ajustar la distancia desde abajo */
-    right: 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1;
-    color: white;
-}
 
-.redes-sociales p {
-    margin-bottom: 0.5rem;
+.redes-sociales{
+    margin-top: 10rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
 }
 
 .redes-icons {
     display: flex;
     align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
 .redes-icons a {
@@ -97,15 +92,21 @@ header nav{
 /* Estilos para el texto que se superpondrá sobre el video */
 .container-video {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
+.container-video h3{
+    margin: 2rem 0;
+}
+
+
 .content-video p {
-    color: rgb(184, 174, 182);
+    color: rgb(255, 255, 255);
+    margin: 1rem 0rem;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.534);
 }
 
@@ -123,7 +124,7 @@ header nav{
 }
 
 main p{
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 
@@ -147,20 +148,24 @@ main p{
     transition: box-shadow .15s ease-in-out;
 }
 
+.navbar-nav .nav-link{
+    padding: 0.5rem 0;
+}
+
 .nav-link{
     color: white;
-    margin: 0.4rem 1.2rem;
-    font-size: 1rem;
+    margin: 0.4rem 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
 .nav-link:hover{
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .boton-nav{
     background-color: rgb(139, 105, 251);
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .boton-nav{
@@ -496,11 +501,12 @@ button a {
 
 .form-derecha h1,
 .form-derecha h3 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
 }
 
 .form-derecha h3 {
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .form-derecha form {
@@ -509,19 +515,20 @@ button a {
 
 .form-derecha p {
     margin: 1rem 0;
+    color: #2f2f2f;
 }
 
 .form-derecha input[type="text"],
 .form-derecha textarea {
     width: 100%;
     padding: 0.5rem;
-    border: 1px solid #ccc;
+    border: 1px solid #d1d1d1;
     border-radius: 5px;
 }
 
 .form-derecha input[type="submit"] {
     background-color: rgb(141, 115, 228);
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 5px;
     padding: 0.5rem 1rem;
@@ -537,11 +544,12 @@ button a {
 /* Estilos para el pie de página */
 footer h4 {
     margin-bottom: 1rem;
+    color:#ffa2e0;
 }
 
 footer a, p{
     font-size: 1rem;
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -683,12 +691,11 @@ footer ul li a:hover {
     }
 
     .navbar {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding: 1.5rem 2rem;
     }
 
     .boton {
-        margin: 1rem;
+        margin: 2rem;
     }
 
     .redes-sociales {
@@ -709,7 +716,7 @@ footer ul li a:hover {
 
     .sobremi,
     .mis-conocimientos {
-        padding: 2.5rem;
+        padding:3rem 2rem;
     }
 
     .mis-conocimientos {
@@ -736,7 +743,7 @@ footer ul li a:hover {
 
     .parrafo-sobremi p,
     .parrafo-conocimientos p {
-        padding: 1rem;
+        padding: 2rem 1rem 0;
         margin: 0;
         overflow: hidden;
         font-size: 1rem;
@@ -765,6 +772,13 @@ footer ul li a:hover {
     body {
         font-size: 1rem;
     }
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
 
     .navbar {
         padding-left: 3rem;
@@ -837,7 +851,7 @@ footer ul li a:hover {
 
 ---------------/* Estilos para pantallas más grandes (escritorio) */----------
 
-@media (min-width: 1200px) {
+@media (min-width: 1080px) {
     body {
         font-size: 17px;
         /* Ajustar el tamaño de fuente para pantallas de escritorio */

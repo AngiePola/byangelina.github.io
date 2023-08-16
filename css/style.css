@@ -86,7 +86,7 @@ header nav{
 .redes-icons img {
     width: 40px;
     height: 40px;
-    opacity: 0.6;
+    opacity: 0.8;
     transition: opacity 0.3s ease;
 }
 
@@ -150,7 +150,7 @@ main p{
 .nav-link{
     color: white;
     margin: 0.4rem 1.2rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 600;
 }
 
@@ -211,7 +211,7 @@ main p{
 
 /* Estilos para los elementos de la lista desplegable */
 .navbar .navbar-nav .nav-item.dropdown .dropdown-menu {
-    background-color: rgb(136, 80, 255);
+    background-color: rgb(255, 172, 231);
     /* Cambia el color de fondo aquí */
 }
 
@@ -220,6 +220,8 @@ main p{
     color: white;
     /* Color de texto blanco */
     transition: color 0.3s ease;
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 /* Estilos para los enlaces en la lista desplegable al pasar el cursor */
@@ -246,12 +248,14 @@ section h1 {
     text-align: center;
     font-size: 2rem;
     color: var(--primer-color);
+    margin-top: 0.9rem;
+    margin-bottom: 0.9rem;
 }
 
 section h3 {
     color: var(--subtitulos);
     font-weight: 300;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
 }
 
 
@@ -280,11 +284,20 @@ button a {
     padding: 7rem;
 }
 
+.contenedor-sobremi{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
 .parrafo-sobremi p {
     text-align: justify;
     padding: 6rem;
     margin: 0;
     color: black;
+    font-size: 1.4rem;
 }
 
 .boton button img {
@@ -298,18 +311,37 @@ button a {
 
 
 /*SECCIÓN MIS CONOCIMIENTOS*/
+
 .mis-conocimientos {
     background-color: rgb(141, 115, 228);
     color: white;
     display: flex;
+    /* Agregamos display: flex */
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 8rem;
+    padding: 3rem;
+    height: auto;
 }
 
-.mis-conocimientos h1 {
+.contenedor-conocimientos {
+    flex: 1;
+    padding:5rem;
+    /* Ocupa la mitad del espacio disponible */
+}
+
+.grafico-conocimientos {
+    flex: 0.5;
+    /* Ocupa la otra mitad del espacio disponible */
+    padding: 2rem 5rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.encabezado-conocimientos h1 {
     color: white;
+    text-align: left;
+    margin-bottom: 3rem;
 }
 
 .porcentaje {
@@ -318,16 +350,11 @@ button a {
 
 .parrafo-conocimientos p {
     text-align: justify;
-    padding: 5rem 2.5rem;
     margin: 0;
+    font-size: 1.4rem;
 }
 
 /* skills de conocimientos */
-.grafico-conocimientos{
-    padding: 3rem 2.5rem;
-    margin: 1rem;
-    font-weight: 800;
-}
 
 .icono-grafico{
     width: 40px;
@@ -346,10 +373,6 @@ button a {
     margin-bottom: 10px;
     align-items: center;
     align-content: center;
-}
-
-.skills .detalles{
-    margin: 1.5rem;
 }
 
 .menu-skills{
@@ -509,6 +532,7 @@ button a {
 
 .form-derecha p {
     margin: 1rem 0;
+    color: black;
 }
 
 .form-derecha input[type="text"],
@@ -521,7 +545,7 @@ button a {
 
 .form-derecha input[type="submit"] {
     background-color: rgb(141, 115, 228);
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 5px;
     padding: 0.5rem 1rem;
@@ -543,7 +567,7 @@ footer h4 {
 
 footer a, p{
     font-size: 1rem;
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -578,108 +602,12 @@ footer ul li a:hover {
 
 /*------------------------- RESPONSIVE -----------------------------------*/
 
-/* Estilos para pantallas más pequeñas (celular pequeño) */
-@media (max-width: 320px) {
-    body {
-            font-size: 1rem;
-            /* Aumentar el tamaño de fuente */
-        }
 
-    .navbar {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-    .nav-link {
-        font-size: 1rem;
-        margin: ;
-    }
-
-    .navbar-toggler-icon {
-        width: 40px; /* Aumentar el tamaño del ícono de hamburguesa */
-        height: 4px;
-    }
-
-    .redes-sociales {
-        margin-top: 1rem;
-    }
-
-    .navbar-nav .dropdown-menu {
-        font-size: 1.2rem; /* Aumentar el tamaño de fuente en el menú desplegable */
-    }
-
-    .navbar .navbar-nav .nav-item.dropdown .dropdown-menu {
-        background-color: rgb(136, 80, 255);
-    }
-
-    .navbar .navbar-nav .nav-item.dropdown .dropdown-menu a {
-        color: white;
-    }
-
-    .redes-sociales {
-        position: absolute;
-        bottom: 1rem;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        z-index: 1;
-    }
-
-    .redes-icons {
-        justify-content: center;
-    }
-
-    .content-video p{
-        font-size: 1rem;
-    }
-
-    section h3{
-        font-size: 1.1rem;
-        padding: 0.5rem 1rem;
-    }
-
-    .sobremi,
-    .mis-conocimientos {
-        padding: 2.5rem;
-    }
-
-    .parrafo-sobremi p,
-    .parrafo-conocimientos p {
-        padding: 2rem  1rem;
-        margin: 0;
-        overflow: hidden;
-        font-size: 1.1rem;
-    }
-
-    .grafico-conocimientos{
-        padding: 1rem;
-    }
-
-    .galeria-desarrollo-web,
-    .galeria-anuncios,
-    .formulario {
-        padding: 2rem 0;
-    }
-
-    /* Ajustes para las secciones */
-    section {
-        padding: 3rem;
-        height: auto;
-    }
-
-    .form-derecha h3{
-        font-size: 1.1rem;
-        text-align: center;
-    }
-}
 
 
 
 /* Estilos para pantallas medianas (celular mediano) */
-@media (min-width: 321px) and (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 375px) {
     body {
         font-size: 15px;
     }
@@ -709,9 +637,35 @@ footer ul li a:hover {
         justify-content: center;
     }
 
-    .sobremi,
-    .mis-conocimientos {
-        padding: 2.5rem;
+    .encabezado-conocimientos h1{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .encabezado-sobremi h1{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    
+    .contenedor-conocimientos {
+            padding: 4rem 1rem 1rem 1rem;
+        }
+
+    .contenedor-sobremi {
+            padding: 4rem 0.5rem 1rem 0.5rem;
+        }
+
+    .parrafo-conocimientos p {
+        margin: 0;
+        overflow: hidden;
+        font-size: 1rem;
+    }
+
+    .parrafo-sobremi p{
+        margin: 0;
+        overflow: hidden;
+        font-size: 1rem;
+        padding: 0 0 2rem 0;
     }
 
     .mis-conocimientos {
@@ -723,9 +677,17 @@ footer ul li a:hover {
         text-align: center;
     }
 
-    .grafico-conocimientos{
-        padding: 1rem;
+    .mi-sobremi {
+        background-color: rgb(255, 255, 255);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 3rem;
     }
+
+
 
     .detalles img, span{
         margin: 5px;
@@ -736,20 +698,6 @@ footer ul li a:hover {
         margin-bottom: 2.9rem;
     }
 
-    .parrafo-sobremi p,
-    .parrafo-conocimientos p {
-        padding: 1rem;
-        margin: 0;
-        overflow: hidden;
-        font-size: 1rem;
-    }
-
-    .galeria-desarrollo-web,
-    .galeria-anuncios,
-    .formulario {
-        padding: 2.5rem 0;
-    }
-
     .form-derecha{
         padding: 2.9rem;
     }
@@ -757,13 +705,18 @@ footer ul li a:hover {
     .form-derecha h3{
         font-size: 1.2rem;
         padding: 1rem;
+        text-align: center;
+    }
+
+    .boton{
+        margin: 2rem;
     }
 }
 
 
 
 /* Estilos para pantallas grandes (celular grande) */
-@media (min-width: 376px) and (max-width: 1000px) {
+@media (min-width: 376px) and (max-width: 1200px) {
     body {
         font-size: 1rem;
     }
@@ -777,9 +730,35 @@ footer ul li a:hover {
         margin: 1.5rem;
     }
 
-    .sobremi,
-    .mis-conocimientos {
-        padding: 3rem;
+    .encabezado-conocimientos h1{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .encabezado-sobremi h1{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    
+    .contenedor-conocimientos {
+            padding: 4rem 1rem 1rem 1rem;
+        }
+
+    .contenedor-sobremi {
+            padding: 4rem 0.5rem 1rem 0.5rem;
+        }
+
+    .parrafo-conocimientos p {
+        margin: 0;
+        overflow: hidden;
+        font-size: 1rem;
+    }
+
+    .parrafo-sobremi p{
+        margin: 0;
+        overflow: hidden;
+        font-size: 1rem;
+        padding: 0 0 2rem 0;
     }
 
     .mis-conocimientos {
@@ -791,21 +770,21 @@ footer ul li a:hover {
         text-align: center;
     }
 
-    .grafico-conocimientos {
-        padding: 2rem 0;
+    .mi-sobremi {
+        background-color: rgb(255, 255, 255);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 3rem;
     }
 
-    .detalles img, span{
-        margin: 5px;
-        font-size: 1rem;
-    }
-
-    .parrafo-sobremi p,
-    .parrafo-conocimientos p {
-        padding: 2rem;
-        margin: 0;
-        overflow: hidden;
-        font-size: 1.1rem;
+    
+    .grafico-conocimientos{
+        flex:1;
+        padding: 3.5rem 2%;
+        width: 70%;
     }
 
     .galeria-desarrollo-web,
@@ -839,10 +818,10 @@ footer ul li a:hover {
 
 ---------------/* Estilos para pantallas más grandes (escritorio) */----------
 
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
     body {
         font-size: 17px;
-        /* Ajustar el tamaño de fuente para pantallas de escritorio */
+        /* Ajustar el tamaño de fuente para pantallas de escritorio 
     }
 
     .navbar {
@@ -888,4 +867,4 @@ footer ul li a:hover {
     .footer-col {
         margin-bottom: 2rem;
     }
-}
+}*/

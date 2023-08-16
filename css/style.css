@@ -687,7 +687,11 @@ footer ul li a:hover {
         padding: 3rem;
     }
 
-
+    .grafico-conocimientos{
+        width: 95%;
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
+    }
 
     .detalles img, span{
         margin: 5px;
@@ -782,9 +786,9 @@ footer ul li a:hover {
 
     
     .grafico-conocimientos{
-        flex:1;
-        padding: 3.5rem 2%;
-        width: 70%;
+        width: 95%;
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
     }
 
     .galeria-desarrollo-web,

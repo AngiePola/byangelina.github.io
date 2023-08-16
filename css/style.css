@@ -23,7 +23,7 @@ a {
 }
 
 p{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 /*!--------HEADER-------- */
@@ -246,10 +246,10 @@ section {
 
 section h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.4rem;
     color: var(--primer-color);
-    margin-top: 0.9rem;
-    margin-bottom: 0.9rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 section h3 {
@@ -297,7 +297,7 @@ button a {
     padding: 6rem;
     margin: 0;
     color: black;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 .boton button img {
@@ -319,7 +319,6 @@ button a {
     /* Agregamos display: flex */
     justify-content: center;
     align-items: center;
-    text-align: center;
     padding: 3rem;
     height: auto;
 }
@@ -351,7 +350,7 @@ button a {
 .parrafo-conocimientos p {
     text-align: justify;
     margin: 0;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 /* skills de conocimientos */
@@ -523,7 +522,7 @@ button a {
 }
 
 .form-derecha h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 .form-derecha form {
@@ -531,8 +530,9 @@ button a {
 }
 
 .form-derecha p {
-    margin: 1rem 0;
+    margin: 1.2rem 0;
     color: black;
+    font-size: 1.3rem;
 }
 
 .form-derecha input[type="text"],
@@ -720,7 +720,7 @@ footer ul li a:hover {
 
 
 /* Estilos para pantallas grandes (celular grande) */
-@media (min-width: 376px) and (max-width: 1200px) {
+@media (min-width: 376px) and (max-width: 1000px) {
     body {
         font-size: 1rem;
     }
